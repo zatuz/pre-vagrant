@@ -10,7 +10,7 @@ else
 fi
 # instala dependencias
 sudo apt update
-sudo apt install -y curl git nano zip unzip || exit
+sudo apt install -y curl git nano zip unzip || "$INSTALL" curl git nano zip unzip || exit
 #creamos carpetas o directorios que se requieren para almacen
 sudo chown -R "$MY_USER":"$MY_USER" /mnt
 sudo chown -R "$MY_USER":"$MY_USER" /opt
