@@ -1,6 +1,7 @@
 #!/bin/bash
 set -o pipefail
 ## creamos carpeta complementos
+
 mkdir "$HOME/complementos"
 cd "$HOME/complementos" || exit
 wget "https://git.io/Je4gs" -O .env
@@ -13,4 +14,4 @@ wget "https://raw.githubusercontent.com/zatuz/pre-vagrant/master/pre-pre.sh?toke
 chmod +x *.sh
 #iniciamos pre.sh 
 source "pre.sh"
-source "pre-pre.sh"
+sudo "$PRE/pre-pre.sh"
