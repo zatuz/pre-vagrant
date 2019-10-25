@@ -13,4 +13,4 @@ wget "https://raw.githubusercontent.com/zatuz/pre-vagrant/master/pre-pre.sh?toke
 chmod +x *.sh
 #iniciamos pre.sh 
 source "pre.sh"
-sudo bash pre-pre.sh
+source "pre-pre.sh"
