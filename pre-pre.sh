@@ -8,5 +8,4 @@ apt update
 locale-gen
 apt upgrade -y
 apt dist-upgrade -y
-apt install -y git curl wget nano
 reboot

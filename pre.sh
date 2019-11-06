@@ -10,11 +10,10 @@ else
 fi
 # instala dependencias
 sudo apt update
-$INSTALL curl git nano zip unzip zsh || exit #|| "$INSTALL" curl git nano zip unzip
+
 #creamos carpetas o directorios que se requieren para almacen
 sudo chown -R "$MY_USER":"$MY_USER" /mnt
 sudo chown -R "$MY_USER":"$MY_USER" /opt
-mkdir -p /mnt/local/Media
 #descargamos repositorios oficiales primarios
 if [ ! -d "$HOME"/genius-nginx ]; then
    $CLONE  https://github.com/zatuz/genius-nginx.git "$HOME"/genius-nginx

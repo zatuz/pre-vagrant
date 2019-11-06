@@ -19,4 +19,6 @@ if [ ! -d "$ZSHPLUGIN"zsh-autosuggestions ]; then
     $CLONE https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 fi
 #copiamos la configuracion de zsh
-cp  $ZSH1 "$HOME"/.zshrc
+cp  $ZSH1 "$HOME"/.zshrc || exit
+#source "$HOME"/.zshrc
+source "$HOME"/.zshrc || exit
